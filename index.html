@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<h1>Einkommensteuerberechnung</h1>
+
+<form action="">
+
+    <p>Bitte wählen Sie das entsprechende Steuerjahr aus!</p>
+    <input type="radio" name="Steuerjahr" id="2020">
+    <label for="2020">2020</label><br>
+    <input type="radio" name="Steuerjahr" id="2019">
+    <label for="2019">2019</label><br>
+    <input type="radio" name="Steuerjahr" id="2018">
+    <label for="2018">2018</label>
+
+    <p>Für wie viele Personen soll das zu versteuerende Einkommen berechnet werden?</p>
+    <input type="radio" name="Steuertarif" id="Grundtarif">
+    <label for="Grundtarif 1 Person">Grundtarif (1 Person)</label><br>
+    <input type="radio" name="Steuertarif" id="Splittingtarif">
+    <label for="Splittingtarif 2 Personen">Splittingtarif (2 Personen)</label>
+
+</form>
+
+
+<section>
+    <label>Person 1 zvE</label>
+    <input type="text" id="Person1zvE"><br>
+
+    <label>Person 2 zvE</label>
+    <input type="text" id="Person2zvE"> <br>
+
+    <label>Gesamtes zvE</label>
+    <input type="text" id="Gesamtes zvE">
+
+    <button onclick="Berechne()" id="ergebnis">Berechne!</button>
+
+    <h2 id="ergebnisEST"></h2>
+
+
+<!-- nächster Schritt: Formel für zvE für 1 P und 2 Personen eintragen -->
+
+</section>
+
+
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- 2. Lösung Anass -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <select name="" id="year">
+            <option value="year20">2020</option>
+            <option value="year19">2019</option>
+            <option value="year18">2018</option>
+        </select>
+        <div>
+            <input type="radio" name="status" id="single" checked onclick="showZVE2()">
+            <label for="">single</label>
+            <input type="radio" name="status" id="married" onclick="showZVE2()">
+            <label for="">married</label>
+        </div>
+        <div>
+            <input type="number" name="" id="zvE1" placeholder="zVE1">
+            <input type="number" name="" id="zvE2" placeholder="zVE2">
+        </div>
+        <input type="button" value="rechnen" onclick="berechne()">
+    </form>
+    <div id="result"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html> -->
